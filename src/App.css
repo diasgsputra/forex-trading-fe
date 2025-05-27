@@ -1,0 +1,282 @@
+/* frontend/src/App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.App {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #004085;
+}
+
+nav button.active {
+    background-color: #003366;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.config-section,
+.orders-section,
+.webhook-section {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.config-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.config-form input[type="text"],
+.config-form input[type="number"] {
+    width: calc(100% - 22px);
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions button:hover {
+    background-color: #218838;
+}
+
+.form-actions button[type="button"] {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.form-actions button[type="button"]:hover {
+    background-color: #e0a800;
+}
+
+.active-config-display {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.active-config-display h3 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.active-config-display pre {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.order-list {
+    overflow-x: auto;
+}
+
+.order-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.order-list th,
+.order-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-list th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+}
+
+.order-list tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.order-list tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+.webhook-sender h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.webhook-sender p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.webhook-form {
+    text-align: center;
+}
+
+.webhook-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.webhook-form input[type="text"],
+.webhook-form input[type="number"] {
+    width: calc(100% - 22px);
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.webhook-form button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.webhook-form button:hover {
+    background-color: #5a6268;
+}
+
+.webhook-form button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.webhook-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.webhook-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.webhook-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
